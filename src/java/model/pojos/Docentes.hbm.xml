@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated ago 5, 2017 7:19:59 p.m. by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.pojos.Docentes" table="DOCENTES" schema="SYSTEM" optimistic-lock="version">
+        <id name="codDocente" type="string">
+            <column name="COD_DOCENTE" length="40" />
+            <generator class="assigned" />
+        </id>
+        <property name="codEstudiante" type="string">
+            <column name="COD_ESTUDIANTE" length="40" />
+        </property>
+        <property name="administrador" type="string">
+            <column name="ADMINISTRADOR" length="40" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="40" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="APELLIDO" length="40" />
+        </property>
+        <property name="cedula" type="int">
+            <column name="CEDULA" precision="22" scale="0" />
+        </property>
+        <property name="directorA" type="string">
+            <column name="DIRECTOR_A" length="40" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="SEXO" length="40" />
+        </property>
+        <property name="anoLectivo" type="int">
+            <column name="ANO_LECTIVO" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
