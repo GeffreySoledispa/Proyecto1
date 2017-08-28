@@ -18,7 +18,7 @@ public class Estudiantes  implements java.io.Serializable {
      private int grado;
      private String sexo;
      private String paralelo;
-     private Date fechaMatricula;
+     private String fechaMatricula;
      private int anoLectivo;
 
     public Estudiantes() {
@@ -28,7 +28,7 @@ public class Estudiantes  implements java.io.Serializable {
     public Estudiantes(String codEstudiante) {
         this.codEstudiante = codEstudiante;
     }
-    public Estudiantes(String codEstudiante, int cedula, String nombre, String apellido, int grado, String sexo, String paralelo, Date fechaMatricula, int anoLectivo) {
+    public Estudiantes(String codEstudiante, int cedula, String nombre, String apellido, int grado, String sexo, String paralelo, String fechaMatricula, int anoLectivo) {
        this.codEstudiante = codEstudiante;
        this.cedula = cedula;
        this.nombre = nombre;
@@ -90,11 +90,11 @@ public class Estudiantes  implements java.io.Serializable {
     public void setParalelo(String paralelo) {
         this.paralelo = paralelo;
     }
-    public Date getFechaMatricula() {
+    public String getFechaMatricula() {
         return this.fechaMatricula;
     }
     
-    public void setFechaMatricula(Date fechaMatricula) {
+    public void setFechaMatricula(String fechaMatricula) {
         this.fechaMatricula = fechaMatricula;
     }
     public int getAnoLectivo() {

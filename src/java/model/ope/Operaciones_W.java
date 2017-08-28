@@ -44,18 +44,18 @@ public class Operaciones_W {
         Docentes d=(Docentes)sesion.get(Docentes.class, codDocente);
         sesion.close(); 
         if(d!=null){
-            return " El Numero de CodDocente: "  +d.getCodDocente()+ 
-                    " el CodEstudiante: "  +d.getCodEstudiante()+ 
-                    " cuyo nombre de Administrador es: "  +d.getAdministrador()+ 
-                    " el nombre del docente: "  +d.getNombre()+ 
-                    " el apellido del docente: "  +d.getApellido()+ 
-                    " la cedula del docente: "  +d.getCedula()+ 
-                    " el nombre del director_a: "  +d.getDirectorA()+ 
-                    " el género del docente: "  +d.getSexo()+ 
-                    " Y por ultimo el año lectivo: "  +d.getAnoLectivo();
+            return "  El Codigo del Docente: " + "  " + d.getCodDocente()+ 
+                    "  el Codigo del Estudiante: " + "  " + d.getCodEstudiante()+ 
+                    "  el Nombre del Administrador: " + "  " + d.getAdministrador()+ 
+                    "  el Nombre del Docente: " + "  " + d.getNombre()+ 
+                    "  el Apellido del Docente: " + "  " + d.getApellido()+ 
+                    "  la Cedula del docente: " + "  " + d.getCedula()+ 
+                    "  el Nombre del director_a: " + "  " + d.getDirectorA()+ 
+                    "  el Género del docente: " + "  " + d.getSexo()+ 
+                    "  Y por Ultimo el Año Lectivo: " + "  " + d.getAnoLectivo();
         }
         else{
-            return "El numero de CodDocente: "+codDocente+ "No existe";
+            return "El Codigo del Docente: " +codDocente   + "  " +   " No Existe!!";
         }
     }
     public List<Docentes> verCodigoDocentes(){
@@ -92,18 +92,18 @@ public class Operaciones_W {
         Estudiantes e=(Estudiantes)sesion.get(Estudiantes.class, codEstudiante);
         sesion.close(); 
         if(e!=null){
-            return " El Numero de CodEstudiante es :   "  +e.getCodEstudiante()+ 
-                   " la cedula del Estudiante es :   "  +e.getCedula()+  
-                   " el nombre del Estudiante es :   "  +e.getNombre()+ 
-                   " el apellido del Estudiante es :   "  +e.getApellido()+ 
-                   " el grado asignado para el Estudiante es :   "  +e.getGrado()+ 
-                   " el género del Estudiante es :   "  +e.getSexo()+ 
-                   " el paralelo asignado para el Estudiante es :   "  +e.getParalelo()+ 
-                   " La fecha de matricula asignada para el Estudiante :   "  +e.getFechaMatricula()+ 
-                   " Y por ultimo el año lectivo :   "  +e.getAnoLectivo();
+            return " El Codigo del Estudiante: " + "  " +e.getCodEstudiante()+ 
+                   " la Cedula del Estudiante: " + "  " +e.getCedula()+  
+                   " el Nombre del Estudiante: " + "  " +e.getNombre()+ 
+                   " el Apellido del Estudiante: " + "  " +e.getApellido()+ 
+                   " el Grado asignado para el Estudiante: " + "  " +e.getGrado()+ 
+                   " el Género del Estudiante: " + "  " +e.getSexo()+ 
+                   " el Paralelo asignado para el Estudiante: " + "  " +e.getParalelo()+ 
+                   " La Fecha de Matricula asignada para el Estudiante: " + "  " +e.getFechaMatricula()+ 
+                   " Y por Ultimo el Año Lectivo : " + "  " +e.getAnoLectivo();
         }
         else{
-            return "El numero de CodEstudiante: "+codEstudiante+ "No existe";
+            return "El Codigo del Estudiante: "+codEstudiante   + "  " +   " No Existe!!";
         }
     }
     
@@ -141,11 +141,11 @@ public class Operaciones_W {
         Institucion i=(Institucion)sesion.get(Institucion.class, Administrador);
         sesion.close(); 
         if(i!=null){
-            return " El Nombre del Administrador_a de la Institución es   :   "  +i.getAdministrador();
+            return " El Nombre del Administrador_a de la Institución es: "   + "  " +   i.getAdministrador();
                    
         }
         else{
-            return " El Nombre del Administrador_a de la Institución :   "  +Administrador+ "No existe";
+            return " El Nombre del Administrador_a de la Institución: " + " " +Administrador   + " " +   " No Existe!!";
         } 
     }
     

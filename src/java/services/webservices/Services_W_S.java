@@ -35,7 +35,7 @@ public class Services_W_S {
                                 cedula,director_A,sexo,anoLectivo);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarDocente(d);
-        return "Docente Ingresado"; 
+        return "Docente Ingresado Correctamente!!"; 
     }
 
     /**
@@ -85,7 +85,7 @@ public class Services_W_S {
         Institucion i=new Institucion(administrador,contrasena);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarInstitucion(i);
-        return "Institucion Ingresada";
+        return "Institucion Ingresada Correctamente!!";
     }
 
     /**
@@ -111,11 +111,11 @@ public class Services_W_S {
      * Web service operation
      */
     @WebMethod(operationName = "IngresarEstudiante")
-    public String IngresarEstudiante(@WebParam(name = "codEstudiante") String codEstudiante, @WebParam(name = "cedula") int cedula, @WebParam(name = "nombre") String nombre, @WebParam(name = "apellido") String apellido, @WebParam(name = "grado") int grado, @WebParam(name = "sexo") String sexo, @WebParam(name = "paralelo") String paralelo, @WebParam(name = "FechaMatricula") Date FechaMatricula, @WebParam(name = "anoLectivo") int anoLectivo) {
+    public String IngresarEstudiante(@WebParam(name = "codEstudiante") String codEstudiante, @WebParam(name = "cedula") int cedula, @WebParam(name = "nombre") String nombre, @WebParam(name = "apellido") String apellido, @WebParam(name = "grado") int grado, @WebParam(name = "sexo") String sexo, @WebParam(name = "paralelo") String paralelo, @WebParam(name = "FechaMatricula") String FechaMatricula, @WebParam(name = "anoLectivo") int anoLectivo) {
         Estudiantes e=new Estudiantes(codEstudiante,cedula,nombre,apellido,grado,sexo,paralelo,FechaMatricula,anoLectivo);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarEstudiante(e);
-        return "Estudiante Ingresado";
+        return "Estudiante Ingresado Correctamente!!";
     }
     
     
