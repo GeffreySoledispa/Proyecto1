@@ -35,7 +35,7 @@ public class Services_W_S {
                                 cedula,director_A,sexo,anoLectivo);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarDocente(d);
-        return "Docente Ingresado Correctamente!!"; 
+        return "Docente de la Institución Ingresado/a Correctamente!!"; 
     }
 
     /**
@@ -85,7 +85,7 @@ public class Services_W_S {
         Institucion i=new Institucion(administrador,contrasena);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarInstitucion(i);
-        return "Institucion Ingresada Correctamente!!";
+        return "Administrador/a de la Institución Ingresado/a Correctamente!!";
     }
 
     /**
@@ -115,7 +115,7 @@ public class Services_W_S {
         Estudiantes e=new Estudiantes(codEstudiante,cedula,nombre,apellido,grado,sexo,paralelo,FechaMatricula,anoLectivo);
         Operaciones_W operaciones_W=new Operaciones_W();
         operaciones_W.IngresarEstudiante(e);
-        return "Estudiante Ingresado Correctamente!!";
+        return "Estudiante de la Institución Ingresado/a Correctamente!!";
     }
     
     

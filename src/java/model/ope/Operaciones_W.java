@@ -35,7 +35,7 @@ public class Operaciones_W {
         }
         catch(Exception ex){
             tx.rollback();
-            throw new RuntimeException ("No se puede guardar el dato del Docente");
+            throw new RuntimeException ("No se puede guardar el dato del Docente de la Institución");
         }
     }
     public String ConsultarDocente (String codDocente){
@@ -44,15 +44,15 @@ public class Operaciones_W {
         Docentes d=(Docentes)sesion.get(Docentes.class, codDocente);
         sesion.close(); 
         if(d!=null){
-            return "  El Codigo del Docente: " + "  " + d.getCodDocente()+ 
-                    "  el Codigo del Estudiante: " + "  " + d.getCodEstudiante()+ 
+            return "  El Código del Docente: " + "  " + d.getCodDocente()+ 
+                    "  el Código del Estudiante: " + "  " + d.getCodEstudiante()+ 
                     "  el Nombre del Administrador: " + "  " + d.getAdministrador()+ 
                     "  el Nombre del Docente: " + "  " + d.getNombre()+ 
                     "  el Apellido del Docente: " + "  " + d.getApellido()+ 
-                    "  la Cedula del docente: " + "  " + d.getCedula()+ 
+                    "  la Cédula del docente: " + "  " + d.getCedula()+ 
                     "  el Nombre del director_a: " + "  " + d.getDirectorA()+ 
                     "  el Género del docente: " + "  " + d.getSexo()+ 
-                    "  Y por Ultimo el Año Lectivo: " + "  " + d.getAnoLectivo();
+                    "  Y por Ultimó el Año Lectivo: " + "  " + d.getAnoLectivo();
         }
         else{
             return "El Codigo del Docente: " +codDocente   + "  " +   " No Existe!!";
@@ -81,7 +81,7 @@ public class Operaciones_W {
         }
         catch(Exception ex){
             tx.rollback();
-            throw new RuntimeException ("No se puede guardar el dato del Estudiante");
+            throw new RuntimeException ("No se puede guardar el dato del Estudiante de la Institución");
         }
         
     }
@@ -130,7 +130,7 @@ public class Operaciones_W {
         }
         catch(Exception ex){
             tx.rollback();
-            throw new RuntimeException ("No se puede guardar el dato de la Institucion");
+            throw new RuntimeException ("No se puede guardar el dato del Administrador/a de la Institución");
         }
         
     }
